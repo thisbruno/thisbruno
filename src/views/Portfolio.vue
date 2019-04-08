@@ -2,10 +2,10 @@
 	<v-app  class="mr-5 ml-5">
         <v-card  flat xs10 text-xs-left class=" mt-3 mb-2 ml-5 white">
           <!-- <v-btn-toggle v-model="toggleView"> -->
-            <v-btn class="primary mx-2  " flat title="Show Projects Thumbnails"  @click="toggleView=!toggleView">
+            <v-btn small="" class="primary mx-2  " flat title="Show Projects Thumbnails"  @click="toggleView=!toggleView">
               <v-icon left>view_module</v-icon> Show
             </v-btn>
-            <v-btn class="primary mx-2 "  flat title="Hide Projects Thumbnails"  @click="toggleView=!toggleView">
+            <v-btn small="" class="primary mx-2 "  flat title="Hide Projects Thumbnails"  @click="toggleView=!toggleView">
               <v-icon left >view_headline</v-icon> Hide
             </v-btn>
           <!-- </v-btn-toggle> -->
