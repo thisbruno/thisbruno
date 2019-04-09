@@ -4,7 +4,7 @@
         <v-layout  align-center column class="mt-5 pt-5" >
             <div class=" text-xs-center mt-3 pt-1 primary--text welcome" style="font-family:Quicksand ; font-size:79px;">Welcome <span class="white--text"></span> </div>
             <div class="display-2 white--text text-xs-center  py-4">I'm <span class='primary--text ' style="font-family: 'Yatra One', cursive;
-            font-size:57px" >BRUNO </span> ;
+            font-size:57mpx" >BRUNO </span> ;
                    </div>          
           <div>                
              <v-card    class="headline font-weight-thin text-xs-center cyan lighten-3 mb-3 px-5 py-2  mt-1" >

@@ -6,7 +6,7 @@
 				<img src='../assets/koff.jpg' :height="thumbnailHeight" class="ml-5 mr-5" > 
 				  <v-card-text>
 						<h3 class="info--text">Get in touch</h3>
-						<p class="title"> Office hours are 9am to 5pm on weekdays. We are based in Salthill, Co. Galway, Ireland.</p>
+						<p class="title"> Office hours are 9am to 9pm on weekdays. We are based in Nairobi, Kenya.</p>
 					</v-card-text>
 				</v-card>
 			</v-flex>			
@@ -16,8 +16,8 @@
 						<p class="title info black--text py-3 px-5 mt-1 ">Have a question? Please enquire below</p>
 
 					<v-flex xs12  text-xs-left>
-			      <v-form class="px-3  mx-3"
-						 action="https://send.pageclip.co/gOf5il7pwKwOvgYn2k0IWWmZFob8Ju2f"  method="Post" ref="form" v-model="valid" lazy-validation>
+			      <v-form class="px-3  mx-3 pageclip-form"
+					action="https://send.pageclip.co/fKoy28YC92aWlP3aeucqC66OIlQWX0zN"  method="post" ref="form" v-model="valid" lazy-validation>
                <v-text-field autofocus   outline style="font-size:19px; font-color:red ; height:73px" name="Name"
                   required  label="NAME" :rules='messageRules' height='19px' >
                </v-text-field>
