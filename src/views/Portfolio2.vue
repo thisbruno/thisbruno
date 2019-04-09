@@ -15,17 +15,17 @@
         </v-flex>
         
       
-        <v-flex xs12  sm6 md5  v-for="project in projects"  :key="project.id"  >
-          <v-card hover :href="project.url" target="_blank" height="100%">
+        <v-flex xs12  sm6 md4  v-for="project in projects"  :key="project.id"  >
+          <v-card hover  >
             <transition name="bounce">
               <v-img contain v-if="toggleView === 0"  :height="thumbnailHeight"
-                :src="project.image"  :title="project.name" >  </v-img>
+                :src="project.image"  :title="project.name" :href="project.url" target="_blank" >  </v-img>
             </transition>
 
             <v-divider />
          
-            <v-card-text>
-              <h3 v-html="project.name" class="mb-2"></h3>
+            <v-card-text @click="toggleView = 0">
+              <h3 v-html="project.name" class="mb-2 title"></h3>
               <v-chip  class="white--text"  color=info
                 small  v-for="tag in project.tags"  :key="tag.id" >
                 {{ tag }}
@@ -67,11 +67,11 @@ export default {
   computed: {
     thumbnailHeight () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '380px'
-        case 'sm': return '330px'
-        case 'md': return '930px'
-        case 'lg': return '290px'
-        case 'xl': return '450px'
+        case 'xs': return '280px'
+        case 'sm': return '250px'
+        case 'md': return '250px'
+        case 'lg': return '240px'
+        case 'xl': return '350px'
       }
     }
   },
