@@ -6,7 +6,7 @@
 				<img src='../assets/koff.jpg' :height="thumbnailHeight" class="ml-5 mr-5" > 
 				  <v-card-text>
 						<h3 class="info--text">Get in touch</h3>
-						<p class="title"> Office hours are 9am to 9pm on weekdays. We are based in Nairobi, Kenya.</p>
+						<p class="title"> Office hours are 9 am to 9 pm on weekdays. We are based in Nairobi, Kenya.</p>
 					</v-card-text>
 				</v-card>
 			</v-flex>			

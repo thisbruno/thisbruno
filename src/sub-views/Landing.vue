@@ -11,7 +11,7 @@
             <vue-typer 
                   class="font-weight-bold  headline " 
                   :text='["Full-Stack Developer","Front-End Developer","Back-End Engineer"," UI/UX Designer","ML Enthusiast", "Analytical Chemist", "Python Developer"  ]'
-                  :repeat='127'  :shuffle='false'  initial-action='typing'
+                  :repeat='127'  :shuffle='true'  initial-action='typing'
                   :pre-type-delay='73'  :type-delay='93' :pre-erase-delay='1270'
                   :erase-delay='37'  erase-style='backspace'  :erase-on-complete='false'
                   caret-animation='smooth' > span
