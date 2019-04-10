@@ -1,22 +1,26 @@
 <template>
-	<v-app>
+	<v-app >
     <v-container>
 			<v-layout >
           <h1 class="mb-2 py-5" style="text-decoration:underline ">@Connect</h1>
 				<v-flex class="text-xs-left socialbar mt-5 pt-5">
-          <v-card class="red">
+          <v-card class="green">
 							<ul>
 							<li>
-								<a  href="#" id="emaill" class="email"><span>thisbruno7@gmail</span><v-icon right large class="primary--text"  >mail</v-icon></a>
+								<a  href="#" id="emaill" class="email"><span>thisbruno7@gmail</span>
+                 <i class="mdi mdi-email-variant"></i>    </a>
+							</li>
+              <li>
+								<a href="#" id="emaill" class="email"><span>(+254) 70-7474-123</span> <i class="mdi mdi-cellphone-basic"></i>   </a>
 							</li>
 							<li>
-								<a href="#" class="twitter"><span>@bruno</span><i class="entypo-twitter"></i></a>
+								<a href="#" class="twitter"><span>@bruno</span> <i class="mdi mdi-twitter"></i>   </a>
 							</li>
 							<li>
-								<a href="#" class="linkedin"><span>brunoki</span> <i class="entypo-linkedin-circled"></i></a>
+								<a href="#" class="linkedin"><span>brunoki</span> <i class="mdi mdi-linkedin-box"></i></a>
 							</li>
 							<li>
-								<a href="#" class="github"><span>@thisbruno</span><i class="entypo-github"></i></a>
+								<a href="#" class="github"><span>@thisbruno</span> <i class="mdi mdi-github-circle"></i> </a>
 							</li>
 						</ul>
           </v-card>
@@ -30,8 +34,6 @@
 </template>
 
 <style scoped>
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-@import url(http://weloveiconfonts.com/api/?family=brandico);
 
 *,*:before,*:after {
   box-sizing: border-box;
@@ -52,7 +54,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 0%;
-  /* transform: translateY( 40px); */
+  transform: translateY( 40px);
    transform: translateX( -77px);
 }
 ul li a {
@@ -78,7 +80,7 @@ ul li a:hover {
 }
 #emaill:hover {
   cursor: pointer;
-  width: 247px;
+  width: 257px;
   color: #fff;
 }
 ul li a:hover span {
@@ -102,10 +104,6 @@ ul li .email {
   border-color: red;
   color: red;
 }
-
-
-
-
 
 ul li .email span {
   border-color: #27ae60;
@@ -132,7 +130,7 @@ ul li span:hover {
 
 
 ul li .email:hover {
-  background: #eb3d3d;
+  background: #da6060;
 }
 ul li .twitter {
   background: rgba(37, 32, 27, 0.1);
@@ -159,15 +157,6 @@ ul li .github:hover {
   background: #d2527f;
 }
 
-/* entypo */
-[class*=entypo-]:before {
-  font-family: "entypo", serif;
-}
-
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-}
 
 div {
   text-align: center;

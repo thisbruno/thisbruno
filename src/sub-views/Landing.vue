@@ -1,11 +1,13 @@
 <template >
     <div class="landing ma-0 pa-0 ">  
     <v-container fluid fill-height class="hero-image title2" style="max-height: 100vh;  overflow-y: hidden;">
-        <v-layout  align-center column class="mt-5 pt-5" >
-            <div class=" text-xs-center mt-3 pt-1 primary--text welcome" style="font-family:Quicksand ; font-size:79px;">Welcome <span class="white--text"></span> </div>
-            <div class="display-2 white--text text-xs-center  py-4">I'm <span class='primary--text ' style="font-family: 'Yatra One', cursive;
-            font-size:57mpx" >BRUNO </span> ;
-                   </div>          
+        <v-layout  align-center column class=" pt-5" >
+            <div class=" text-xs-center mt-3 pt-1 primary--text welcome hidden-xs-only" style="font-family:Quicksand ; font-size:79px;">Welcome <span class="white--text"></span> </div>
+            <div class=" text-xs-center  pt-2 mt-2 primary--text welcome hidden-sm-and-up" style="font-family:Quicksand ; font-size:59px;">Welcome <span class="white--text"></span> </div>
+             <div class="display-2 white--text text-xs-center hidden-xs-only py-4">I'm <span class='primary--text ' style="font-size:57mpx ;font-family: sana-serif" >BRUNO </span> ;
+            </div>         
+            <div class="display-2 white--text text-xs-center  hidden-sm-and-up py-3">I'm <span class='primary--text ' style="font-size:43px ; font-family: sana-serif" >BRUNO </span> ;
+            </div> 
           <div>                
              <v-card    class="headline font-weight-thin text-xs-center cyan lighten-3 mb-3 px-5 py-2  mt-1" >
             <vue-typer 
@@ -19,23 +21,23 @@
              </v-card>
              </div>    
           <v-flex  id="nav" text-xs-center class="mt-2">
-           <a href="#thisbruno"> 
+           <a href="#bruno"> 
              <v-btn fab  class="cyan lighten-2  lighten-1 primary--text "> <v-icon size="57px" >arrow_drop_down</v-icon></v-btn></a>
           </v-flex>  
 
          <vue-particles class="particles" 			
             color="#80deea"   :particleOpacity="0.7"
-            :particlesNumber="137"  shapeType="circle"
+            :particlesNumber="157"  shapeType="circle"
             :particleSize="4"  linesColor="#00ffff"
              :linesWidth="1"  :lineLinked="true"
             :lineOpacity="0.4"  :linesDistance="150"
             :moveSpeed="4" :hoverEffect="true"
-             hoverMode="repulse"  :clickEffect="true"
+             hoverMode="bubble"  :clickEffect="true"
               clickMode="push">
           </vue-particles>                  
         </v-layout>
     </v-container>
-     <div id="thisbruno"></div>
+     <div id="bruno"></div>
     </div>
 </template>
 
