@@ -1,9 +1,9 @@
 <template>
-  <v-container fluid class="mt-0 pt-2  ">
+  <v-container fluid class="mt-0 pt-5  ">
     <p class="display-3 text-xs-center">de Services</p>
 
     <v-layout row wrap justify-space-around >
-      <v-flex xs11 sm4 md3 text-xs-center
+      <v-flex xs11 sm4  text-xs-center
       v-for="service in services" :key="service.id"   >
 
       <v-card flat class=" ma-2 mb-3 justify-space-around">        
@@ -21,7 +21,6 @@
 
       </v-flex>
     </v-layout>
-
   </v-container>
 </template>
 

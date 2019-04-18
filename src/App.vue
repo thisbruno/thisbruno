@@ -1,36 +1,23 @@
 <template>
   <v-app>
-    <body>
-    <header  style="position:relative ; z-index: 2" v-show="$route.path==='/..' ? false : true">
-    <Menu style="position:fixed ; z-index: 2" ></Menu>
-    <app-nav class="SleekNav navbar  "></app-nav>
+    <header  style="position:relative ; z-index: 2" >
+    <app-HamMenu style="position:fixed ; z-index: 3" class="hidden-sm-and-up"></app-HamMenu>
+    <app-Nav class="SleekNav "></app-Nav>
     </header>
       
+    <body>
     <v-content >
       <router-view/>
     </v-content>
-    </body>    
+    </body>  
+
+    <footer>
+    <app-Footer></app-Footer>
+    </footer>  
 
   </v-app>
 </template>
 
-<script>
-import Nav from './components/ElasticNav.vue'
-import Menu from './components/Menu.vue'
-import router from './router'
-
-export default {
-  name: 'App',
-      components: {
-       Nav, Menu
-    },
-  data () {
-    return {
-      //
-    }
-  }
-}
-</script>
 
 
 <style >

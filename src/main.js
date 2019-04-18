@@ -6,39 +6,30 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
 import VueParticles from 'vue-particles'
 
-// import'./styles.scss'
 
-// index.js or main.js
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 
 import VueTyperPlugin from 'vue-typer'
 import "./stylus/main.styl"
 
-// import Vuetify from 'vuetify/lib'
-// import 'vuetify/src/stylus/app.styl'
 global.jQuery = require('jquery');
 var $ = global.jQuery;
-window.$ = $;
+window.$ = $; 
 
 import Nav from './components/ElasticNav.vue'
-import mobMenu from './components/mobMenu.vue'
+import hamMenu from './components/HamMenu.vue'
+import Footer from './components/Footer.vue'
 
 
-Vue.component('app-nav', Nav)
-Vue.component('app-mobmenu', mobMenu)
+Vue.component('app-Nav', Nav)
+Vue.component('app-HamMenu', hamMenu)
+Vue.component('app-Footer', Footer)
+
+
 Vue.use(VueParticles)
+Vue.use(VueTyperPlugin)
 
 Vue.config.productionTip = false
-
-Vue.use(VueTyperPlugin)
-// Vue.use(Vuetify, {
-//   theme: {
-//     primary: '',
-//     info:''
-   
-//   }
-// })
-
 
 
 new Vue({

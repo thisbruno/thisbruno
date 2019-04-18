@@ -1,7 +1,7 @@
 <template>
-<v-app class="mr-5 ml-5 about">
+<v-app class="mr-5 ml-5 about ">
 
-  <v-layout row wrap text-xs-center justify-space-around class="mt-4">
+  <v-layout row wrap text-xs-center justify-space-around class="mt-5 pt-5 hidden-xs-only">
     <v-flex xs11 sm10>
       <p class="headline font-weight-bold py-4" style="border-bottom:2px solid; border-top:2px solid">
          Freelance Web Designer & Developer based in Nairobi, Kenya. <br>
@@ -9,6 +9,18 @@
       </p>
     </v-flex>
   </v-layout>
+
+    <v-layout row wrap text-xs-center justify-space-around class="mt-4 hidden-sm-and-up">
+    <v-flex xs11 sm10>
+      <p class="headline font-weight-bold py-4" style="border-bottom:2px solid; border-top:2px solid">
+         Freelance Web Designer & Developer based in Nairobi, Kenya. <br>
+        Experienced in developing using  JavaScript and Wordpress 
+      </p>
+    </v-flex>
+  </v-layout>
+
+
+
 
    <v-layout row wrap text-xs-center justify-space-around >
     <v-flex xs9 sm7>

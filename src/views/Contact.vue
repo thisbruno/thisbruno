@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-layout row wrap justify-space-between class="mt-4">
+		<v-layout row wrap justify-space-between class="mt-4 pt-5">
 
 			<v-flex xs12 sm4 md3 text-xs-center>
 				<v-card>

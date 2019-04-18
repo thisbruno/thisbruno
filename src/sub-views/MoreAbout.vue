@@ -118,17 +118,15 @@
          </v-card>
         </v-flex>
           </v-layout>
-    <Footer></Footer>
 	</v-app>
 </template>
 
 <script>
-import Footer from '../components/Footer.vue'
 import Social from '../components/Social.vue'
 
   export default {
     components: {
-      Footer , Social,
+       Social
     },
   }
 </script>

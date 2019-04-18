@@ -1,15 +1,15 @@
 <template  >
-	<v-app  class="">
+	<v-app  class="pt-4">
 		   <v-container fluid grid-list-xl>
-        <v-card  flat xs10 text-xs-left class=" mt-3  ml-5 white">
-          <!-- <v-btn-toggle v-model="toggleView"> -->
+				 <p class="text-xs-center display-2 pt-4">Portfolio</p>
+        <v-card  flat xs10  class=" mt-3  ml-5 text-xs-right" color="#fafafa">
+					<v-spacer></v-spacer>
             <v-btn  class="primary mx-2  " flat title="Show Projects Thumbnails"  @click="toggleView=!toggleView">
-              <v-icon left>view_module</v-icon> Show
+              <v-icon left>mdi-eye-plus-outline</v-icon> Show
             </v-btn>
             <v-btn  class="primary mx-2 "  flat title="Hide Projects Thumbnails"  @click="toggleView=!toggleView">
-              <v-icon left >view_headline</v-icon> Hide
+              <v-icon left >mdi-eye-off-outline</v-icon> Hide
             </v-btn>
-          <!-- </v-btn-toggle> -->
         </v-card>
 		<v-layout row wrap justify-space-around>
 
