@@ -2,7 +2,7 @@
 <v-app>
   <Landing/> 
 
-  <app-nav class="mt-2  thenavbar "></app-nav>
+  <!-- <app-nav class=" thenavbar "></app-nav> -->
 
   <About style="overflow-y:auto;" />
   <MoreAbout />
@@ -13,30 +13,47 @@
 import Landing from '../sub-views/Landing.vue'
 import About from '../sub-views/About.vue'
 import MoreAbout from '../sub-views/MoreAbout.vue'
+import router from '../router'
+
 
   export default {
     components: {
        Landing , About , MoreAbout
     },
+    // created(){
+    //    this.$nextTick(() => {
+    //    if (this.$route.path==='/skills'){
+    //       $('.navbar').addClass( "thenavbar" )
+    //       console.log("wef rkjev k");
+    //        }
+    //     else{
+    //        $('.navbar').removeClass( "thenavbar" )
+    //       }
+    //   })
+      
+    // },
+
+
+
     mounted() {
       this.$nextTick(() => {
-          $('.thenavbar').hide()
-          // $('.thenavbar').fadeIn('slow')
-
-      
+      //  if ($route.path==='/'){
+          // $('.thenavbar').hide()
+          //  }
+     
       }),
       $(function(){
         $(window).scroll(function(){
-          if($(window).scrollTop() >= 400){
+          if($(window).scrollTop() >= 200){
           $('.thenavbar').slideDown(970)
           }
           else{
-           $('.thenavbar').slideUp(670)
+          //  $('.thenavbar').slideUp(670)
           }
         })
       })
 
-        //  ,
+      //    ,
       // $(function(){
       //    var prevScrollpos = window.pageYOffset;
       //   $(window).scroll(function(){
@@ -61,11 +78,11 @@ import MoreAbout from '../sub-views/MoreAbout.vue'
 
 <style scoped>
 .thenavbar{
-/* position: sticky; */
+position: sticky;
  top: 0px; 
 width: 100%;
  transition: top ease-in-out 0.03s;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hideNav{

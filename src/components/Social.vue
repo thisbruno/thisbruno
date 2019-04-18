@@ -2,16 +2,16 @@
 	<v-app >
     <v-container>
 			<v-layout >
-          <h1 class="mb-2 py-5" style="text-decoration:underline ">@Connect</h1>
+          <h1 class="mb-2 py-5 primary--text" style="text-decoration:underline ">@Connect</h1>
 				<v-flex class="text-xs-left socialbar mt-5 pt-5">
           <v-card class="green">
 							<ul>
+              <li>
+								<a href="#" id="emaill" class="email"><span>(+254) 70-7474-123</span> <i class="mdi mdi-cellphone-basic"></i>   </a>
+							</li>
 							<li>
 								<a  href="#" id="emaill" class="email"><span>thisbruno7@gmail</span>
                  <i class="mdi mdi-email-variant"></i>    </a>
-							</li>
-              <li>
-								<a href="#" id="emaill" class="email"><span>(+254) 70-7474-123</span> <i class="mdi mdi-cellphone-basic"></i>   </a>
 							</li>
 							<li>
 								<a href="#" class="twitter"><span>@bruno</span> <i class="mdi mdi-twitter"></i>   </a>

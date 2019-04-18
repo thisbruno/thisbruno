@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 
 import Portfolio from './views/Portfolio'
 import Services from './views/Services.vue'
-import Skills from './views/Skills.vue'
+import Skills from './views/Skills2.vue'
 import Contact from './views/Contact.vue'
 
 Vue.use(Router)

@@ -1,13 +1,11 @@
 <template>
-	<v-container id="mob-menu" class="hidden-sm-and-up">
+	<v-container>
 		<div id="menu-bar">
-
-			<div id="menu"  >
+			<div id="menu" hidden-md-down class="hidden-md-down">
 				<div id="bar1" class="bar"></div>
 				<div id="bar2" class="bar"></div>
 				<div id="bar3" class="bar"></div>
 			</div>
-
 			<ul class="nav" id="nav">
 				<li><a href="#">Home</a> </li>
 				<li><a href="#">Portfolio</a></li>
@@ -15,7 +13,6 @@
 				<li><a href="#">Skills</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-
 		</div>
 		<div class="menu-bg" id="menu-bg"></div>
 	</v-container>
@@ -26,7 +23,7 @@
 export default {
 	mounted() {
 		$(document).ready(function(){
-  $("#menu-bar").click(function(){
+  $("#menu").click(function(){
 		$("#menu").toggleClass("change");
 		$("#nav").toggleClass("change");
 		$("#menu-bg").toggleClass("change-bg");
@@ -43,13 +40,13 @@ export default {
 
 
 <style scoped>
- #mob-menu{
-	font-family: 'Quick sand',sans-serif;
+body{
+	font-family: 'PT Sans',sans-serif;
 	background-color: #373c56;
 }
 #menu{
 	width: 35px;
-	height: 20px;
+	height: 30px;
 	margin: 30px 0 20px 20px;
 	cursor: pointer;
 }
@@ -70,24 +67,18 @@ export default {
 .nav li a{
 	color: #fff;
 	text-decoration: none;
-	font-size: 19px;
-	font-family: Quicksand;
-	font-weight: light;
 }
 .nav li a:hover{
 	font-weight: bold;
-	background-color: cyan;
-	text-transform: uppercase;
-	color: black;
 }
 .nav li{
 	list-style: none;
-	padding: 4px 0;
+	padding: 16px 0;
 }
 .nav{
 	padding: 0;
 	margin: 0 20px;
-	transition: 0.4s ease;
+	transition: 0.3s ease;
 	display: none;
 }
 .menu-bg, #menu-bar{
@@ -100,17 +91,17 @@ export default {
 	width: 0;
 	height: 0;
 	margin: 30px 0 20px 20px;
-	background: radial-gradient(circle,#E31B6D,#ff5252);
-	border-radius: 47%;
+	background: radial-gradient(circle,#e94498,#b81568);
+	border-radius: 50%;
 	transition: 0.3s ease;
 }
 #menu-bar{
 	z-index: 2;	
 }
 .change-bg{
-	width: 570px;
-	height: 550px;
-	transform: translate(-63%,-33%);
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
 }
 .change .bar{
 	background-color: white;

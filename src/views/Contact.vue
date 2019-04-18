@@ -1,11 +1,12 @@
 <template>
 	<v-app>
-		<v-layout row wrap justify-space-around class="mt-4">
-						<v-flex xs12 sm4 text-xs-center>
+		<v-layout row wrap justify-space-between class="mt-4">
+
+			<v-flex xs12 sm4 md3 text-xs-center>
 				<v-card>
-			<div class="">
+			<v-card >
 					<img cover src='../assets/br.png' :height="thumbnailHeight"  width="100%"  > 
-			</div>
+			</v-card>
 
 				  <v-card-text>
 						<h3 class="info--text">Get in touch</h3>
@@ -13,7 +14,7 @@
 					</v-card-text>
 				</v-card>
 			</v-flex>			
-			<v-flex xs12 sm6>
+			<v-flex xs12 sm6 md5 >
 				<v-card class="mr-2 ml-2">
 					<v-layout justify-center row wrap>				
 						<p class="title info black--text py-3 px-5  mt-1  text-xs-center">Have a question? <br> Please enquire below..</p>
@@ -82,11 +83,11 @@ export default {
 		computed: {
 		   thumbnailHeight () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '330px'
-        case 'sm': return '280px'
-        case 'md': return '330px'
-        case 'lg': return '350px'
-        case 'xl': return '400px'
+        case 'xs': return '350px'
+        case 'sm': return '200px'
+        case 'md': return '230px'
+        case 'lg': return '250px'
+        case 'xl': return '300px'
       }
     }
 	}

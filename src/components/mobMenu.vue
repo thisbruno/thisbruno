@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<nav class="menu">
-    <header>Menu <span>×</span></header>
+    <header class="primary--text">Menu <span>×</span></header>
     <ol>
         <li class="menu-item"><a href="#0">Home</a></li>
         <li class="menu-item"><a href="#0">About</a></li>
@@ -55,7 +55,7 @@
   line-height: 1.5;
 }
 body {
-  background: #9fcedf;
+  /* background: #9fcedf; */
   margin: 0;
 }
 nav {
@@ -76,7 +76,7 @@ nav li {
 nav a {
   display: block;
   text-decoration: none;
-  background: #fff;
+  /* background: #fff; */
   transform-origin: 0 0;
   transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
   transition-delay: var(--delay-out);
@@ -84,17 +84,17 @@ nav a {
   padding: 1em 1.52em;
 }
 nav a:hover {
-  background: #efefef;
+  /* background: #efefef; */
 }
 nav .sub-menu a {
   font-size: 0.9em;
   color: #666666;
   border-left: 2em solid white;
   padding: 0.75em;
-  background: linear-gradient(to right, #ddd 2px, #fff 2px);
+  /* background: linear-gradient(to right, #ddd 2px, #fff 2px); */
 }
 nav .sub-menu a:hover {
-  background: linear-gradient(to right, #ddd 2px, #efefef 2px);
+  /* background: linear-gradient(to right, #ddd 2px, #efefef 2px); */
 }
 nav header {
   font-weight: 600;
@@ -127,7 +127,7 @@ nav footer button {
   transition-delay: calc(var(--duration) + (.1s * (var(--count) / 2)));
   cursor: pointer;
   outline: none;
-  background: #cdcdcd;
+  /* background: #cdcdcd; */
   opacity: 0;
 }
 nav.closed a,

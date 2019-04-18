@@ -1,15 +1,19 @@
 <template>
-  <div class="mt-0 ">
+  <div class="mt-0 ela-nav  hidden-xs-only">
 	  <div class="wrapper" >
-   <v-toolbar floating fixed height="43"  class="tabs mt-2 info ">
+   <v-toolbar  floating  fixed height="43"  class="tabs mt-0 info "
+    style=" border: 1opx solid rgb(236, 4, 4);" >
 		<v-spacer></v-spacer>
     <div class="selector ">
     </div>
+    <span >
     <router-link to="/" class="active" ><span class="active">Home</span></router-link>	
    	<router-link to="/portfolio"><span>portfolio</span></router-link>	
 		<router-link to="/services"><span>services</span></router-link>		
 		<router-link to="/skills"><span>skills</span></router-link>	
 		<router-link to="/contact"><span>contact</span></router-link>
+    </span>
+      
     </v-toolbar>
     </div>
   </div>
@@ -60,11 +64,11 @@ $(".tabs").on("click","a",function(e){
    font-family: "Quicksand", sans-serif;
    position: sticky;
    top: 0px;;
-	  z-index: 2;
+    z-index: 1;
 }
 
 .tabs{
-  margin:18px 17px 0 0;
+  margin:18px 7px 0 0;
   font-size:17px;
   padding: 0px;
   list-style:none;
@@ -74,7 +78,7 @@ $(".tabs").on("click","a",function(e){
   display:inline-block;
   border-radius:20px;
   position:sticky;
-	border: 1px solid rgb(155, 145, 145);
+	border: 0px solid rgb(245, 7, 7);
 }
 
 .tabs a{
@@ -100,11 +104,11 @@ $(".tabs").on("click","a",function(e){
   margin-right:11px;
 }
 
-.tabs .selector{
+/* .tabs .selector{
   height:99%;
   display:inline-block;
   position:absolute;
-  left:0px;
+  left:20px;
   top:0px;
   z-index:1;
   border-radius: 16px;
@@ -114,6 +118,22 @@ $(".tabs").on("click","a",function(e){
   background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
   background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+} */
+.tabs .selector{
+  height:99%;
+  display:inline-block;
+  position:absolute;
+  left:20px;
+  top:0px;
+  z-index:1;
+  border-radius: 16px;
+  transition-duration:0.37s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);  
+  background: #e005ce;
+  background: -moz-linear-gradient(45deg, #e005a9 0%, #f400d3 100%);
+  background: -webkit-linear-gradient(45deg, #e005bb 0%,#f400e8 100%);
+  background: linear-gradient(45deg, #e0059e 0%,#f400e8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
 }
 </style>

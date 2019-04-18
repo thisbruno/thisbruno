@@ -1,12 +1,12 @@
 <template>
 <div>
-	<v-layout  wrap class="primary lighten-5 "  align-center>
+	<v-layout  wrap class="primary lighten-5 "  align-center justify-space-between>
 		<v-flex xs12 text-xs-center class="cyan lighten-4 mt-1 mx-1 pt-2">
             <v-layout column align-center >                
              <v-card justify-center flat   class="headline py-3 font-weight-bold text-xs-center  cyan lighten-4 " >
             <vue-typer  
                   :text='["DASHBOARD"]'
-                  :repeat='1'  :shuffle='false'  initial-action='typing'
+                  :repeat='2'  :shuffle='false'  initial-action='typing'
                   :pre-type-delay='73'  :type-delay='193' :pre-erase-delay='1270'
                   :erase-delay='137'  erase-style='backspace'  :erase-on-complete='false'
                   caret-animation='blink' >

@@ -21,8 +21,11 @@ var $ = global.jQuery;
 window.$ = $;
 
 import Nav from './components/ElasticNav.vue'
+import mobMenu from './components/mobMenu.vue'
+
 
 Vue.component('app-nav', Nav)
+Vue.component('app-mobmenu', mobMenu)
 Vue.use(VueParticles)
 
 Vue.config.productionTip = false
