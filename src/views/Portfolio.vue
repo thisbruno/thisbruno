@@ -2,7 +2,7 @@
 	<v-app  class="pt-4">
 		   <v-container fluid grid-list-xl>
 				 <p class="text-xs-center display-2 pt-4">Portfolio</p>
-        <v-card  flat xs10  class=" mt-3  ml-5 text-xs-right" color="#fafafa">
+        <v-card  flat xs12  class=" mt-3  ml-5 text-xs-right" color="#fafafa">
 					<v-spacer></v-spacer>
             <v-btn  class="primary mx-2  " flat title="Show Projects Thumbnails"  @click="toggleView=!toggleView">
               <v-icon left>mdi-eye-plus-outline</v-icon> Show
@@ -14,7 +14,7 @@
 		<v-layout row wrap justify-space-around>
 
 
-		<v-flex xs10 sm5 md4  text-xs-right   class="mb-1 "
+		<v-flex xs12 sm5 md4  text-xs-right   class="mb-1 "
 		 v-for="project in projects"  :key="project.id" >
        <v-card round hover  
 			 style="text-decoration:none"  class="info lighten-4  mr-2 ml-2">
@@ -27,20 +27,19 @@
 
 					<v-card-text @click="toggleView=!toggleView">
 						<v-flex xs12 text-xs-left>
-						<h2 v-html="project.name" class=" ml-1 headline font-weight-bold"
-						></h2>
+						<h2 class="text-xs-left pb-2">{{project.name}}</h2>
 						</v-flex>
-            <!-- <v-flex text-xs-right> -->
+            <v-flex text-xs-right>
 						<v-chip class="body-1 black--text font-weight-regular text-xs-right" color="info"
 						small v-for="tag in project.tags" :key="tag.id">
 						{{tag}}
 						</v-chip>
-						<v-btn fab small :href="project.url" target="_blank" style="text-decoration:none" class='' ><v-icon class="primary--text " size="23px">arrow_forward</v-icon></v-btn>
-						<!-- </v-flex> -->
+						<span><v-btn fab small :href="project.url" target="_blank" style="text-decoration:none" class='' ><v-icon class="primary--text " size="23px">arrow_forward</v-icon></v-btn></span>
+						</v-flex>
 		      
 					</v-card-text>
 
-			 </v-card>
+			 </v-card> 
 		</v-flex>
 		</v-layout>
 		</v-container>
@@ -52,7 +51,7 @@
 export default {
 	data() {
 		return {
-			 toggleView: true,
+			 toggleView: false,
 			projects: [
 				 { name: 'Project Manager', url: `https://github.com/thisbruno/`,  image: require("../assets/pm1.png") , tags: ['JQuerry', 'Vue.js', 'Vuetify'] },
 			

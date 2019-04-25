@@ -6,21 +6,21 @@
 				<v-flex class="text-xs-left socialbar mt-5 pt-5">
           <v-card class="green">
 							<ul>
-              <li>
-								<a href="#" id="emaill" class="email"><span>(+254) 70-7474-123</span> <i class="mdi mdi-cellphone-basic"></i>   </a>
+               <li >
+								<a  target="_blank" id="emaill" class="email"><span>(+254) 70-7474-123</span> <i class="mdi mdi-cellphone-basic"></i>   </a>
 							</li>
 							<li>
-								<a  href="#" id="emaill" class="email"><span>thisbruno7@gmail</span>
+								<a  href="mailto:thisbruno7@gmail" target="_blank" id="emaill" class="email"><span>thisbruno7@gmail</span>
                  <i class="mdi mdi-email-variant"></i>    </a>
 							</li>
+							<!-- <li>
+								<a href="#" target="_blank" class="twitter"><span>Twitter</span> <i class="mdi mdi-twitter"></i>   </a>
+							</li> -->
 							<li>
-								<a href="#" class="twitter"><span>@bruno</span> <i class="mdi mdi-twitter"></i>   </a>
+								<a href="https://www.linkedin.com/in/thisbruno" target="_blank" class="linkedin"><span>Linked In</span> <i class="mdi mdi-linkedin-box"></i></a>
 							</li>
 							<li>
-								<a href="#" class="linkedin"><span>brunoki</span> <i class="mdi mdi-linkedin-box"></i></a>
-							</li>
-							<li>
-								<a href="#" class="github"><span>@thisbruno</span> <i class="mdi mdi-github-circle"></i> </a>
+								<a href="https://github.com/thisbruno" target="_blank" class="github"><span>@thisbruno</span> <i class="mdi mdi-github-circle"></i> </a>
 							</li>
 						</ul>
           </v-card>
@@ -151,10 +151,10 @@ ul li .linkedin:hover {
 ul li .github {
   background: rgba(44, 38, 40, 0.1);
   border-color: rgb(48, 41, 43);
-  color: rgb(43, 37, 39);
+  color: rgb(8, 8, 8);
 }
 ul li .github:hover {
-  background: #d2527f;
+  background: #000000;
 }
 
 

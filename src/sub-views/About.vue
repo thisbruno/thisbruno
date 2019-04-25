@@ -1,41 +1,43 @@
 <template>
-<v-app class="mr-5 ml-5 about ">
+<v-app class="mr-2 ml-2  pa- about ">
 
   <v-layout row wrap text-xs-center justify-space-around class="mt-5 pt-5 hidden-xs-only">
-    <v-flex xs11 sm10>
+    <v-flex xs12 sm10>
       <p class="headline font-weight-bold py-4" style="border-bottom:2px solid; border-top:2px solid">
-         Freelance Web Designer & Developer based in Nairobi, Kenya. <br>
-        Experienced in developing using  JavaScript and Wordpress 
+         Freelance Web Designer & Developer  <br>
+        Experienced in developing with JavaScript and Wordpress 
       </p>
     </v-flex>
   </v-layout>
 
     <v-layout row wrap text-xs-center justify-space-around class="mt-4 hidden-sm-and-up">
-    <v-flex xs11 sm10>
+    <v-flex xs12 sm10>
       <p class="headline font-weight-bold py-4" style="border-bottom:2px solid; border-top:2px solid">
-         Freelance Web Designer & Developer based in Nairobi, Kenya. <br>
-        Experienced in developing using  JavaScript and Wordpress 
+         Freelance Web Designer & Developer <br>
+        Experienced in developing with  JavaScript and Wordpress 
       </p>
     </v-flex>
   </v-layout>
 
 
-
-
    <v-layout row wrap text-xs-center justify-space-around >
     <v-flex xs9 sm7>
-    <p class="title mt-2 ">
+    <p class="title mt-2 pb-2 " >
         I'm a Full-Stack Developer with more than two years of experience in WEB technologies. I have doing a different kind of projects using <strong> JavaScript / HTML5 / CSS3  and Node.JS </strong>
+        <br> <br>
+         I'm <router-link to = '/contact' style="cursor: pointer; text-decoration: none" ><span class="font-weight-bold title" > available</span></router-link>  for remote work If you would like to build something together,
+        
     </p>
     </v-flex>
   </v-layout>
 
-  <v-layout row justify-space-around class="mt-4 pt-3 pb-1 text-xs-center info lighten-4" >
-      <v-flex xs11 sm10 md8>
+  <v-layout row justify-space-around class="mt-4 pt-1 pb-1 text-xs-center info lighten-4" >
+      <v-flex xs12 sm10 md8>
        <v-card flat class="info lighten-4 py-3 subheading">
        <v-card-text style="font-size:17px">
-         My <router-link to= '/services' class="font-weight-bold"  style="cursor: pointer;text-decoration: none"> <strong>Skills</strong> </router-link> are broad ranging from <strong>User Experience (UX) to Design, Front-End to Back-End development</strong> . <br>
-         I'm <router-link to = '/contact' style="cursor: pointer; text-decoration: none" ><span class="font-weight-bold" > available</span></router-link>  for remote work If you would like to build something together,
+         <div class="headline primary--text pb-2">Services</div>
+         My <router-link to= '/services' class="font-weight-bold "  style="cursor: pointer;text-decoration: none"> <strong>Skills</strong> </router-link> are broad ranging from <strong>User Experience (UX) to Design, Front-End to Back-End development</strong> . <br>
+
         </v-card-text>
 
         </v-card>
@@ -46,40 +48,41 @@
     <v-flex xs12>
      <v-card flat class="info lighten-4">
       <v-layout row wrap  justify-space-around>
-        <v-flex xs11 sm5 md4 class="mb-2 pb2">
+        <v-flex xs12 sm5 md4 class="mb-2 pb2">
           <v-card flat class="mr-1 ml-3 info lighten-3">
             <v-flex xs12 class="py-4 subheading font-weight-bold" >
                 Web Design
             </v-flex>
             <v-flex xs12>
-              <v-avatar size="173" color="red">
-                <img :src="require('../assets/design.png')" alt="Avatar" >
+              <v-avatar size="193" color="red">
+                <img  :src="require('../assets/webb.jpg')" alt="Avatar" height="173" >
               </v-avatar>     
             </v-flex>
             <v-flex>
               <v-card-text>
-                <p class="subheading">
-                   My approach to website design is to create a website that strengthens your  brand while ensuring ease of use and simplicity for your audience.
+                <p class="subheading px-2">
+                   My approach to website design is to create an elegant and innovative website that strengthens your  brand while ensuring ease of use and simplicity for your audience. <br> Efficient and immersive user experience to capture your audience attention and deliver a clear message.
                 </p>
               </v-card-text>
             </v-flex>
          </v-card>
         </v-flex> 
         <!-- end of card -->
-         <v-flex xs11 sm5 md4 class="mb-2 pb2">
+         <v-flex xs12 sm5 md4 class="mb-2 pb2">
           <v-card flat class="mr-1 ml-1 info lighten-3">
             <v-flex xs12 class="py-4 subheading font-weight-bold" >
                 Front-End Development
             </v-flex>
             <v-flex xs12>
-              <v-avatar size="173" color="red">
-                <img :src="require('../assets/design.png')" alt="Avatar" >
+              <v-avatar size="193" color="red">
+                <img :src="require('../assets/code2.jpg')" alt="Avatar" >
               </v-avatar>     
             </v-flex>
             <v-flex>
               <v-card-text>
-                <p class="subheading">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quidem earum autem. Assumenda dolore quis itaque odio a cum sit, dolorum iusto pariatur, corrupti amet nobis ullam et obcaecati blanditiis. Lorem ipsum dolor, sit amet consectetur adip
+                <p class="subheading px-2">
+                  The Front-End Development involves using the pre-agreed design and coding it to a custom web app using the web industry stardards <br>(HTML5, CSS3, JS, jQuery). <br>
+                  I create responsive websites so they can easily run across all devices and broswers fluidly resizing for optimal viewing despite the screen size  .
                 </p>
               </v-card-text>
             </v-flex>
@@ -87,20 +90,21 @@
         </v-flex>
         <!-- end of card -->
 
-         <v-flex xs11 sm5 md4 class="mb-2 pb2">
+         <v-flex xs12 sm5 md4 class="mb-2 pb2">
           <v-card flat class="mr-3 ml-1 info lighten-3">
             <v-flex xs12 class="py-4 subheading font-weight-bold" >
                 Back-End Development
             </v-flex>
             <v-flex xs12>
-              <v-avatar size="173" color="red">
-                <img :src="require('../assets/design.png')" alt="Avatar" >
+              <v-avatar size="193" color="red">
+                <img :src="require('../assets/back.jpg')" alt="Avatar" >
               </v-avatar>     
             </v-flex>
             <v-flex>
               <v-card-text>
-                <p class="subheading" >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quidem earum autem. Assumenda dolore quis itaque odio a cum sit, dolorum iusto pariatur, corrupti amet nobis ullam et obcaecati blanditiis.
+                <p class="subheading px-2" >
+                  I'm also a proficient in Back-End Web development, which adds utility and functionality to everything that was created in the Front-End. <br>
+                  To prop up my Back-End skills I have learnt Python , Node.Js alongside with Mongo.DB to help me understand servers architecture  and server-side web application logic.
                 </p>
               </v-card-text>
             </v-flex>
@@ -110,7 +114,7 @@
       </v-layout>
         <v-layout class="pb-3 pt-2">
            <v-flex>
-           <v-btn large to="/services" class="primary white--text" >VIEW MORE SERVICES</v-btn>
+           <v-btn large to="/services" style="text-decoration:none" class="primary white--text mybtn" >VIEW MORE SERVICES</v-btn>
            </v-flex>
           </v-layout>
      </v-card>  
@@ -123,15 +127,16 @@
 
         <v-layout justify-center class=" mt-5 info lighten-4 ">
       <v-flex xs6 text-xs-center  class=" pt-4">
-        <p class="black--text headline font-weight-bold">
-          Check out some of my skills and some of the technology I use.
+        <h1>Web Technology</h1>
+        <p class="black--text  font-weight-bold">
+          Check out some of the technology I use,
         </p>
       </v-flex>
     </v-layout>
   <!-- skills cards with languages -->
     <v-layout row wrap text-xs-center justify-space-around class="mt-0">
       <v-flex xs12 class="info lighten-4 text-xs-center">
-      <v-flex xs10 offset-xs1>
+      <v-flex xs12 >
        <v-card flat class="info lighten-4 py-1 pb-5">
       <v-layout row wrap  justify-center >
 
@@ -235,7 +240,7 @@
 
             <v-flex xs12 >
               <v-card flat hidden-sm-and-down class="mt-4 info lighten-4 pb-1 mx-3">
-              <img src="../assets/vue.jpg" alt=""  height="60px" srcset="">
+              <img src="../assets/vue.png" alt=""  height="60px" srcset="">
                 <div class="font-weight-bold">Vue.JS</div>
               </v-card>     
             </v-flex>
@@ -259,7 +264,7 @@
         </v-flex>  
 
         <v-flex xs12 class="mt-3">
-         <v-btn large to="/skills" class="primary white--text" >VIEW MORE SKILLS</v-btn>       
+         <v-btn large to="/skills" style="text-decoration:none " class="primary white--text mybtn" >VIEW MORE SKILLS</v-btn>       
         </v-flex>
 
         </v-layout>
@@ -273,30 +278,18 @@
 </v-app>	
 </template>
 
-<script>
-import Nav from '../components/Nav.vue'
-// import Footer from '../components/Footer.vue'
-  export default {
-    components: {
-
-    },
-  }
-</script>
-
 <style scoped>
 .about{
   overflow-x: hidden;
 }
 
-.skillset {
-    background: url("../assets/moon.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%; height: 7vh;
-    /* position: relative; */
-    background-attachment: fixed;
-    background: rgb(0, 0, 0);
-
+.mybtn:hover{
+  color: yellow;
+  text-transform: lowercase; 
+  
 }
+
+
 
 </style>
 
