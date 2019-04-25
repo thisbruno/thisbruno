@@ -97,7 +97,7 @@
          </v-card>
         </v-flex>
 
-				<v-flex xs9 sm9  class="mb-2 pb2">
+				<v-flex xs6 sm4  class="mb-2 pb2">
          <v-flex xs12 sm12 class="headline font-weight-bold py-5 text-xs-center info lighten-3  " >
           Contact Me through my <br>
             <span class="primary--text"> <span class="mdi mdi-arrow-left-bold"></span>
